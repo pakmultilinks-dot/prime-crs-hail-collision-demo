@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prime CRS Hail and Collision, Houston | KezTech Demo Concept</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#1d2733;background:#f5f8fb;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.banner{background:#0f2a44;color:#fff;text-align:center;padding:12px 16px;font-size:14px}
+.hero{background:linear-gradient(135deg,#0f2a44,#1d6fb8);color:#fff;padding:64px 0 56px}
+.hero h1{font-size:44px;line-height:1.1;margin:8px 0}.hero p{font-size:19px;max-width:720px;opacity:.95}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:13px}
+.btn{display:inline-block;background:#ffb703;color:#0f2a44;text-decoration:none;padding:13px 22px;border-radius:8px;font-weight:700}
+.hours{background:#fff3c4;border:1px solid #e6c87a;border-radius:10px;padding:12px 16px;margin-top:18px;color:#3d3200}
+section{padding:44px 0}h2{font-size:32px;margin:0 0 10px}.muted{color:#55606c}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.card{border:1px solid #dbe4ec;background:#fff;border-radius:14px;padding:22px}
+.card.good{border-top:6px solid #1d7a4d}.card.old{border-top:6px solid #9aa7b3}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.feature{background:#fff;border:1px solid #dbe4ec;border-radius:14px;padding:20px}
+form{background:#fff;border:1px solid #dbe4ec;border-radius:16px;padding:26px;margin-top:18px}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #b9c6d2;border-radius:8px;font-size:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+button{background:#0f2a44;color:#fff;border:0;padding:14px 24px;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer}
+.confirm{display:none;background:#eaf5ee;border:1px solid #1d7a4d;border-radius:12px;padding:20px;margin-top:18px}
+.confirm h3{margin-top:0}.note{font-size:14px;color:#55606c}
+.faq details{background:#fff;border:1px solid #dbe4ec;border-radius:10px;padding:14px 18px;margin:10px 0}
+footer{border-top:1px solid #dbe4ec;padding:24px 0 40px;color:#55606c;font-size:14px}
+@media(max-width:700px){.grid,.features,.two,.three{grid-template-columns:1fr}.hero h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="banner">KezTech Solution demo concept for Prime CRS Hail and Collision. This is not the official site.</div>
+<header class="hero"><div class="wrap">
+<p class="eyebrow">Prime CRS Hail and Collision &middot; Houston, TX 77037 &middot; Family owned since 1989 &middot; Serving Greater Houston</p>
+<h1>Hail damage? Request a free inspection online in one minute.</h1>
+<p>Describe the hail or collision damage, add your vehicle details, and pick a preferred day and time window. Your inspection request is written down with a reference, instead of starting only with a phone call or an email.</p>
+<p><a class="btn" href="#request">Request a free inspection</a></p>
+<div class="hours"><strong>Phone:</strong> (832) 949-7159. <strong>Address:</strong> 259 Blue Bell Rd B, Houston, TX 77037. <strong>Serving:</strong> Greater Houston, including Spring, The Woodlands, Humble, Aldine, Cypress, Tomball, Katy, Sugar Land, Pasadena, and Pearland.</div>
+</div></header>
+
+<main class="wrap">
+<section>
+<h2>Before vs this demo</h2>
+<p class="muted">This demo fixes one gap only, and it is scoped honestly: the About page says "Schedule a free inspection" but shows phone and email only, with no form to send the inspection request in writing. This demo adds that free inspection request form. It does not claim the whole site has no form.</p>
+<div class="grid">
+<div class="card old"><h3>Before</h3><p><strong>Phone and email only for the inspection</strong></p><p>The About page invites a free inspection, but a customer had to call or email to ask for it, with nothing in a form to refer back to.</p></div>
+<div class="card good"><h3>This demo</h3><p><strong>One free inspection request form</strong></p><p>Pick the service, add the vehicle year, make, and model, and choose a preferred day and time window. The confirmation shows on screen right away, with a reference to keep.</p></div>
+</div>
+</section>
+
+<section>
+<h2>What the request covers</h2>
+<div class="features">
+<div class="feature"><h3>Free hail inspection</h3><p>Request a free hail inspection, with room to describe where the dents are and when the hail happened.</p></div>
+<div class="feature"><h3>Paintless dent repair</h3><p>Paintless dent repair and hail dent removal, with room to describe the panels affected.</p></div>
+<div class="feature"><h3>Insurance claim assistance</h3><p>Insurance claim assistance is listed, along with collision repair, towing, and a lifetime warranty on qualifying repairs. Add the claim details in the description if they apply.</p></div>
+</div>
+</section>
+
+<section id="request">
+<h2>Free inspection request</h2>
+<p class="muted">Fill in what you know. For an urgent safety issue, call the shop directly as well.</p>
+<form id="form">
+<div class="two">
+<div><label for="name">Full name *</label><input id="name" required></div>
+<div><label for="phone">Phone *</label><input id="phone" type="tel" required></div>
+</div>
+<div class="two">
+<div><label for="email">Email</label><input id="email" type="email"></div>
+<div><label for="service">Service needed *</label><select id="service" required>
+<option value="">Choose one</option><option>Free hail inspection</option><option>Paintless dent repair</option><option>Hail dent removal</option><option>Collision repair</option><option>Insurance claim assistance</option><option>Towing</option><option>Other</option>
+</select></div>
+</div>
+<div class="three">
+<div><label for="year">Vehicle year *</label><input id="year" required placeholder="For example: 2019"></div>
+<div><label for="make">Vehicle make *</label><input id="make" required placeholder="For example: Toyota"></div>
+<div><label for="model">Vehicle model *</label><input id="model" required placeholder="For example: Camry"></div>
+</div>
+<div class="two">
+<div><label for="day">Preferred day *</label><input id="day" type="date" required></div>
+<div><label for="window">Preferred time window *</label><select id="window" required>
+<option value="">Choose one</option><option>Morning</option><option>Midday</option><option>Afternoon</option><option>End of day</option>
+</select></div>
+</div>
+<label for="msg">Describe the damage</label>
+<textarea id="msg" rows="4" placeholder="For example: where the dents are, when the hail happened, and any insurance claim details if they apply."></textarea>
+<p><button type="submit">Send free inspection request</button></p>
+<p class="note">Demo form only. Nothing is sent to a server. On a live site, this would go straight to the Prime CRS Hail and Collision team.</p>
+</form>
+<div class="confirm" id="confirm"><h3>Inspection request received</h3><p><strong>Reference:</strong> <span id="ref"></span></p><p id="summary"></p><p>Thank you. On a live site, the Prime CRS Hail and Collision team would reply to confirm the next step and timing.</p></div>
+</section>
+
+<section class="faq">
+<h2>Common questions</h2>
+<details><summary><strong>Is this the official Prime CRS Hail and Collision website?</strong></summary><p>No. This is a demo concept built by KezTech Solution to show how a free inspection request form could work. It is not the official site for Prime CRS Hail and Collision.</p></details>
+<details><summary><strong>What does this demo change?</strong></summary><p>Only this: the About page says "Schedule a free inspection" but shows phone and email only, with no form. This demo adds the free inspection request form. It does not claim the whole site has no form.</p></details>
+<details><summary><strong>What areas are served?</strong></summary><p>Greater Houston is listed, including Spring, The Woodlands, Humble, Aldine, Cypress, Tomball, Katy, Sugar Land, Pasadena, and Pearland.</p></details>
+<details><summary><strong>What warranty is listed?</strong></summary><p>A lifetime warranty on qualifying repairs is listed.</p></details>
+<details><summary><strong>Does this form guarantee an inspection time?</strong></summary><p>No. This is a request, not a booking. On a live version, the team would confirm availability, timing, and next steps.</p></details>
+</section>
+</main>
+
+<footer><div class="wrap">
+<p>KezTech Solution demo concept for Prime CRS Hail and Collision, Houston, TX. This page is a front-end demo only. Nothing submitted here is sent to a server or to the business.</p>
+<p>Shop listed at 259 Blue Bell Rd B, Houston, TX 77037. Phone: (832) 949-7159.</p>
+<p>Our work: <a href="https://keztech-portfolio.vercel.app">keztech-portfolio.vercel.app</a></p>
+</div></footer>
+
+<script>
+document.getElementById('form').addEventListener('submit', function(e){
+e.preventDefault();
+var ref='PR-'+Math.random().toString(36).slice(2,7).toUpperCase();
+document.getElementById('ref').textContent=ref;
+document.getElementById('summary').textContent='Thank you, '+document.getElementById('name').value+'. Your request for '+document.getElementById('service').value+' for your '+document.getElementById('year').value+' '+document.getElementById('make').value+' '+document.getElementById('model').value+' on '+document.getElementById('day').value+' in the '+document.getElementById('window').value+' window has been noted in this demo.';
+var c=document.getElementById('confirm'); c.style.display='block'; c.scrollIntoView({behavior:'smooth'});
+});
+</script>
+</body>
+</html>
